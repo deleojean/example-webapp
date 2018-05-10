@@ -33,6 +33,11 @@ pipeline {
                 }
             }
         }
+        stage('Archive') {
+            steps {
+                // archive image
+            }
+        }
         stage('Deploy') {
             steps {
                 // get image and tag for release
